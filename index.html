@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#d4a017">
+<title>H.M.R. Lasith Bandara | Digital ID</title>
+<style>
+:root{
+  --gold:#d4a017;
+  --gold-light:#f7d46a;
+  --black:#111214;
+  --white:#ffffff;
+  --muted:#aeb1b8;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;color:var(--white);
+  background:radial-gradient(circle at top,rgba(212,160,23,.22),transparent 34%),
+  linear-gradient(145deg,#090909,#1a1a1d 55%,#0b0b0c);
+  display:flex;justify-content:center;padding:28px 14px;
+}
+.card{
+  width:min(100%,460px);min-height:760px;position:relative;overflow:hidden;
+  border:1px solid rgba(247,212,106,.42);border-radius:28px;
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.025));
+  box-shadow:0 22px 70px rgba(0,0,0,.55);backdrop-filter:blur(10px);
+}
+.card:before{
+  content:"";position:absolute;width:280px;height:280px;border-radius:50%;
+  background:rgba(212,160,23,.15);filter:blur(20px);top:-150px;right:-100px;
+}
+.header{position:relative;text-align:center;padding:25px 20px 15px}
+.logo{
+  width:88px;height:88px;object-fit:contain;border-radius:50%;background:#fff;padding:3px;
+  border:2px solid var(--gold-light);box-shadow:0 0 24px rgba(212,160,23,.35);
+}
+.org{
+  margin:10px 0 0;font-size:11px;line-height:1.45;letter-spacing:1.2px;
+  text-transform:uppercase;color:var(--gold-light);
+}
+.photo-wrap{display:flex;justify-content:center;position:relative;padding-top:4px}
+.photo{
+  width:170px;height:170px;object-fit:cover;object-position:center top;border-radius:50%;
+  border:5px solid var(--gold);box-shadow:0 0 0 8px rgba(255,255,255,.06),0 15px 35px rgba(0,0,0,.45);
+}
+.info{text-align:center;padding:20px 22px 10px}
+.name{margin:0;font-size:27px;line-height:1.12;letter-spacing:.5px}
+.role{
+  margin:10px 0 0;color:var(--gold-light);font-size:12px;font-weight:bold;
+  letter-spacing:1.2px;line-height:1.7;
+}
+.unit{margin:8px auto 0;color:#d5d7dc;font-size:13px;line-height:1.5}
+.badge{
+  display:inline-block;margin-top:14px;padding:7px 14px;border-radius:999px;
+  border:1px solid rgba(247,212,106,.35);background:rgba(212,160,23,.12);
+  color:#fff1b4;font-size:11px;letter-spacing:1px;
+}
+.details{
+  margin:18px 20px 12px;padding:7px;border-radius:20px;background:rgba(0,0,0,.23);
+  border:1px solid rgba(255,255,255,.07);
+}
+.detail{
+  display:flex;justify-content:space-between;gap:12px;padding:13px 11px;
+  border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;
+}
+.detail:last-child{border-bottom:0}.label{color:var(--muted)}
+.value{text-align:right;color:#fff;font-weight:bold;word-break:break-word}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 20px 24px}
+.btn{
+  min-height:50px;display:flex;align-items:center;justify-content:center;text-decoration:none;
+  border-radius:14px;font-size:14px;font-weight:bold;transition:.2s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:linear-gradient(135deg,var(--gold),#f1c54d);color:#15120a}
+.secondary{border:1px solid rgba(247,212,106,.45);color:var(--white);background:rgba(255,255,255,.06)}
+.save{grid-column:1/-1}
+.footer{text-align:center;padding:0 18px 22px;font-size:10px;color:#777b84;letter-spacing:.5px}
+@media(max-width:380px){.name{font-size:23px}.photo{width:145px;height:145px}}
+</style>
+</head>
+<body>
+<main class="card">
+  <header class="header">
+    <img class="logo" src="temple-logo.png" alt="Sri Sumana Saman Maha Dewalaya Logo">
+    <p class="org">Sri Sumana Saman Maha Dewalaya</p>
+  </header>
+
+  <div class="photo-wrap">
+    <img class="photo" src="lasith-photo.jpeg" alt="H.M.R. Lasith Bandara">
+  </div>
+
+  <section class="info">
+    <h1 class="name">H.M.R. LASITH<br>BANDARA</h1>
+    <p class="role">EDITOR • PHOTOGRAPHER<br>SOCIAL MEDIA OPERATOR</p>
+    <p class="unit">Sri Sumana Saman Maha Dewalaya<br>Media Unit</p>
+    <span class="badge">OFFICIAL DIGITAL ID PROFILE</span>
+  </section>
+
+  <section class="details">
+    <div class="detail"><span class="label">NIC</span><span class="value">200730304243</span></div>
+    <div class="detail"><span class="label">Call</span><span class="value">0761331029</span></div>
+    <div class="detail"><span class="label">WhatsApp</span><span class="value">0761331029</span></div>
+    <div class="detail"><span class="label">Email</span><span class="value">lasithbandara29@gmail.com</span></div>
+  </section>
+
+  <section class="actions">
+    <a class="btn primary" href="tel:+94761331029">📞 Call</a>
+    <a class="btn secondary" href="https://wa.me/94761331029" target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a class="btn secondary" href="mailto:lasithbandara29@gmail.com">✉️ Email</a>
+    <a class="btn secondary save" href="lasith-bandara.vcf" download>➕ Save Contact</a>
+  </section>
+
+  <div class="footer">DIGITAL IDENTIFICATION • MEDIA UNIT</div>
+</main>
+</body>
+</html>
